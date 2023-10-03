@@ -1,0 +1,58 @@
+@import "../SCSS/Base/variable";
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+  html {
+    font-size: 55%;
+  }
+  .container {
+    max-width: 970px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  html {
+    font-size: 50%;
+  }
+  .container {
+    max-width: 750px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  html {
+    font-size: 45%;
+    scroll-padding-top: 0;
+  }
+  body {
+    padding-bottom: 5rem;
+  }
+  .container {
+    max-width: 320px;
+  }
+  .header {
+    #search-btn {
+      display: inline-block;
+    }
+    &__top {
+      box-shadow: $boxShadow;
+      position: relative;
+    }
+    &__search-form {
+      position: absolute;
+      top: -120%;
+      box-shadow: $boxShadow;
+    }
+    &__navbar {
+      display: none;
+    }
+  }
+}
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+  html {
+    font-size: 48%;
+  }
+  .container {
+    max-width: 450px;
+  }
+}

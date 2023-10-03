@@ -1,0 +1,97 @@
+.header {
+  &__top {
+    background-color: $white;
+  }
+  &__top-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 0;
+  }
+  &__logo {
+    a {
+      font-size: 2.5rem;
+      font-weight: bolder;
+      text-transform: none;
+      color: $black;
+      cursor: pointer;
+      i {
+        color: $green;
+        padding-right: .5rem;
+      }
+    }
+  }
+  &__search-form {
+    width: 50rem;
+    height: 5rem;
+    border: $border;
+    border-radius: .5rem;
+    display: flex;
+    align-items: center;
+    background-color: $white;
+    overflow: hidden;
+    input {
+      width: 100%;
+      height: 100%;
+      padding: 0 1.5rem;
+      font-size: 1.5rem;
+      text-transform: none;
+      color: $black;
+    }
+    label {
+      font-size: 2rem;
+      color: $black;
+      padding-right: 1.5rem;
+      cursor: pointer;
+      &:hover {
+        color: $green;
+      }
+    }
+    &.active {
+      top: 120%;
+    }
+  }
+  &__icons {
+    div, a {
+      font-size: 2.5rem;
+      margin-left: 1.5rem;
+      color: $black;
+      cursor: pointer;
+      &:hover {
+        color: $green;
+      }
+    }
+    #search-btn {
+      display: none;
+    }
+  }
+  &__navbar {
+    background-color: $green;
+    &.active {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 1000;
+    }
+  }
+  &__menu {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    li {
+      margin: 0 1rem;
+      a {
+        display: inline-block;
+        font-size: 1.7rem;
+        padding: 1.2rem;
+        color: $white;
+        cursor: pointer;
+        &:hover {
+          background-color: $darkGreen;
+        }
+      }
+    }
+  }
+}
